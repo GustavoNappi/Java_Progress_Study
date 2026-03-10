@@ -15,6 +15,7 @@ public class Ex02 {
         } else {
             System.out.println("É IMPAR");
         }
+        sc.close();
 
     }
 
