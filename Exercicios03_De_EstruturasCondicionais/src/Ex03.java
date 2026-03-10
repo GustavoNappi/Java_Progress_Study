@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Ex03 {
@@ -7,18 +8,22 @@ public class Ex03 {
 // Multiplos", indicando se os valores lidos são múltiplos entre si. Atenção: os números devem poder ser digitados em 
 // ordem crescente ou decrescente.
 
-        Scanner sc = new Scanner(System.in);
-        int a;
+    Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite um numero para ver se é Par ou impar: ");
-        a = sc.nextInt();
+    int a;
+    int b;
 
-        if (a % 2 == 0) {
-            System.out.println("É PAR");
-        } else {
-            System.out.println("É IMPAR");
-        }
-        sc.close();
+
+    System.out.print("Digite o valor de a: ");
+     a = sc.nextInt();
+    System.out.print("Digite o valor de b: ");
+     b= sc.nextInt();
+
+     if (a % b == 0 || b % a == 0 ){
+        System.err.print(" São multiplos! ");
+     }else{System.out.print(" Não são multiplos! ");}
+    
+     sc.close();
     }
 
 }
